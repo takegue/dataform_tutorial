@@ -8,6 +8,9 @@ config {
   type: "view", // Creates a view in BigQuery. Try changing to "table" instead.
   columns: {
     test: "A description for the test column", // Column descriptions are pushed to BigQuery.
+  },
+  assertions: {
+    nonNull: ["test"]
   }
 }
 
